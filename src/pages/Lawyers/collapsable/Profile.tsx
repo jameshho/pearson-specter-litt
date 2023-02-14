@@ -25,7 +25,8 @@ const Profile = () => {
                     </div>
 
                     <div className="right ">
-                        <img src={`/headshots/${theData?.img}`} />
+                        <img src="images/headshots/harvey-spector.jpg"/>
+                        <img src={`/images/headshots/${theData?.img}`} alt={`${theData?.img}`}/>
                         <h3>{theData?.name}</h3>
 
                         <p className='right-title'>Partner</p>
