@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/pearson-specter-litt/static/css/main.4dead83e.css",
+    "main.js": "/pearson-specter-litt/static/js/main.4863bd6c.js",
+    "index.html": "/pearson-specter-litt/index.html",
+    "main.4dead83e.css.map": "/pearson-specter-litt/static/css/main.4dead83e.css.map",
+    "main.4863bd6c.js.map": "/pearson-specter-litt/static/js/main.4863bd6c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dead83e.css",
+    "static/js/main.4863bd6c.js"
+  ]
+}
