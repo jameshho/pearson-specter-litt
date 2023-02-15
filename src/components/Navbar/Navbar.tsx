@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 
@@ -17,11 +17,11 @@ const Navbar = () => {
 
         <div className='navbar'>
             <div onClick={()=>setToggle(prev=>!prev)} className="hamburgermenu"><GiHamburgerMenu /></div>
-            <Link to='/' className='links'><p>The Firm</p></Link>
-            <Link to='/practicearea' className='links'>Practice Areas</Link>
-            <Link to='/lawyers' className='links'>People</Link>
+            <Link to='/pearson-specter-litt' className='links'><p>The Firm</p></Link>
+            <Link to='/pearson-specter-litt/practicearea' className='links'>Practice Areas</Link>
+            <Link to='/pearson-specter-litt/lawyers' className='links'>People</Link>
             <NavbarSide toggle={toggle} setToggle={setToggle} />
-            <Link to='/Contact' className='links'>Contact</Link>
+            <Link to='/pearson-specter-litt/contact' className='links'>Contact</Link>
             <div>
 
                 <HiOutlineMail size={"2rem"} />

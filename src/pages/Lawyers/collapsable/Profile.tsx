@@ -1,8 +1,5 @@
-import React, { useState } from 'react'
 import { useParams } from 'react-router-dom';
-import Logo from '../../../components/Logo'
 import CollapseAll from './Collapse'
-import Collapse from './Collapse'
 import personnel from '../../../data/personnel';
 
 
@@ -15,7 +12,6 @@ const Profile = () => {
         <div>
 
             <div className='profile'>
-                {/* <Logo /> */}
                 <div className='profile-container'>
                     <div className='left'>
                         <h1 className="profile-name">{theData?.name}</h1>
@@ -25,8 +21,7 @@ const Profile = () => {
                     </div>
 
                     <div className="right ">
-                        <img src="images/headshots/harvey-spector.jpg"/>
-                        <img src={`/images/headshots/${theData?.img}`} alt={`${theData?.img}`}/>
+                        <img src={process.env.PUBLIC_URL + `/images/headshots/${theData?.img}`} alt={`${theData?.img}`} />
                         <h3>{theData?.name}</h3>
 
                         <p className='right-title'>Partner</p>

@@ -10,7 +10,7 @@ const TaxLaw = () => {
 <Logo/>
         </div>
         <h1 className='profile-practice'>Practice Areas</h1>
-        <h2>Corporate Law</h2>
+        <h2>Tax Law</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis hic ducimus, corrupti accusamus dolorem ad? Repellendus velit eius commodi minima facilis corporis cum eum culpa, dolorem delectus tempore ipsam fugiat!
         </p>

@@ -1,9 +1,5 @@
 import React, { useState } from 'react'
-import { readConfigFile } from 'typescript'
-import personnel from '../../../data/personnel'
 
-
-const data = personnel.find(i => i.id === 12002)
 
 type PropsTypeS = {
     state: boolean,
@@ -12,55 +8,53 @@ type PropsTypeS = {
     content: string | string[]
 }
 
-const FancyParagraph = () => {
+
+interface ParagraphWithBoldWordsProps {
+    text: string;
+}
+function ParagraphWithBoldWords({ text }: ParagraphWithBoldWordsProps) {
+    const parts = text.split(/(\*\*.*?\*\*)/g);
 
     return (
         <div>
-            Jessica Pearson is a partner at Pearson Specter Litt, a <strong>Harvard Law School graduate</strong> known for her <strong>intelligence</strong> and <strong>integrity</strong>. 
-            Pearson possesses outstanding negotiating skills and leadership abilities. She excels in <strong>Mergers & Acquisitions</strong> and <strong>Leveraged Buyouts</strong>, having represented many prominent companies in various corporate transactions.
-            With <strong>extensive knowledge</strong> in various industries, clients <strong>trust</strong> her to protect their legal interests and achieve their goals.
+            {parts.map((part, index) => {
+                if (part.match(/^\*\*.+\*\*$/)) {
+                    return <strong key={index}>{part.substring(2, part.length - 2)}</strong>;
+                } else {
+                    return <span key={index}>{part}</span>;
+                }
+            })}
         </div>
-    )
-
+    );
 }
+
 const Collapse = (props: PropsTypeS) => {
 
 
-    // return (
-    //     <div className="wrapper">
-    //         <div className="collapsible">
-    //             <label onClick={props.toggle}>{props.header} <img src='/images/arrow.svg' className={props.state ? 'rotate' : ""} /></label>
-    //             <div className={props.state ? "text collapsible-collapsed" : "text collapsible-notcollapsed"}>
-    //                 {typeof props.content === 'string' ? props.content :
-    //                     Array.isArray(props.content) ?
-    //                         <ul>
-    //                             {props.content.map((i) => <li key={i}>{i}</li>)}
-    //                         </ul> : null}
-
-    //             </div>
-
-    //         </div>
-    //     </div>
-
-    // )
 
     return (
-        <div className="wrapper">
+        < div className="wrapper" >
             <div className="collapsible">
-                <label onClick={props.toggle}>{props.header} <img src='/images/arrow.svg' className={props.state ? 'rotate' : ""} /></label>
+                <label onClick={props.toggle}>{props.header} <img alt="arrow" src={process.env.PUBLIC_URL + '/images/arrow.svg'} className={props.state ? 'rotate' : ""} /></label>
                 <div className={props.state ? "text collapsible-collapsed" : "text collapsible-notcollapsed"}>
-                    {typeof props.content === 'string' ? props.header == "About" ? <FancyParagraph /> : props.content :
-                        Array.isArray(props.content) ?
-                            <ul>
-                                {props.content.map((i) => <li key={i}>{i}</li>)}
-                            </ul> : null}
-
+                    {typeof props.content === 'string' ? (
+                        // <p>{props.content}</p>
+                        <>
+                            <ParagraphWithBoldWords text={props.content} />
+                        </>
+                    ) : Array.isArray(props.content) ? (
+                        <ul>
+                            {props.content.map((i) => (
+                                <li key={i}>{i}</li>
+                            ))}
+                        </ul>
+                    ) : null}
                 </div>
-
             </div>
         </div>
-
     )
+
+
 }
 
 type PropsTypeE = {

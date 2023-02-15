@@ -1,25 +1,21 @@
-import React from 'react'
-
 const personnel = [
     {
         id:12011,
         name: "Jessica Pearson",
         img: "jessica-pearson.jpg",
     
-        background: "Jessica Pearson is a partner at Pearson Specter Litt, a Harvard Law School graduate known for her intelligence and integrity. She excels in M&A, representing top firms in corporate transactions, and is a skilled negotiator and leader. With extensive knowledge in various industries, clients trust her to protect their legal interests and achieve their goals.",
+        background: "Jessica Pearson is a partner at Pearson Specter Litt, a **Harvard Law School** graduate known for her **intelligence** and **integrity**. Pearson possesses outstanding negotiating skills and leadership abilities. She excels in **Mergers & Acquisitions** and **Leveraged Buyouts**, having represented many prominent companies in various corporate transactions. With **extensive knowledge** in various industries, clients **trust** her to protect their legal interests and achieve their goals.",
         practice: ["Corporate law", "Mergers and Acquisitions", "Securities law", "Intellectual property law", "Labor Law"],
         achievements: ["Successfully represented a major corporation in a multi-billion dollar merger",
             "Won a high-stakes securities fraud case",
             "Negotiated a favorable settlement in a high-profile labor dispute",
             "Secured a key victory for a client in a closely watched intellectual property case"]
     }, 
-    
-   
     {
         id:12002,
         name: "Harvey Spector",
         img: "harvey-spector.jpg",
-        background: "Harvey Spector is a top corporate lawyer and managing partner at Pearson Specter Litt. He holds a law degree from Harvard Law School and has a reputation as a ruthless negotiator.",
+        background: "Harvey Spector is a **top corporate lawyer** and managing partner at Pearson Specter Litt. He holds a law degree from **Harvard Law School** and has a reputation as a ruthless negotiator.",
         achievements: ["Successfully represented a major corporation in a multi-billion dollar merger", "Won a high-stakes securities fraud case", "Negotiated a favorable settlement in a high-profile labor dispute", "Secured a key victory for a client in a closely watched intellectual property case"],
         
         practice:
@@ -31,7 +27,7 @@ const personnel = [
         name: "Louis Litt",
         img: "louis-litt.jpg",
         
-        background: "Louis Litt is a Harvard Law School graduate who worked his way up from an associate to a senior partner at Pearson Specter Litt. He is known for his attention to detail and sharp legal mind, but also for his eccentric and comical personality.",
+        background: "Louis Litt is a **Harvard Law School** graduate who worked his way up from an associate to a senior partner at Pearson Specter Litt. He is known for his **attention to detail** and **sharp legal mind**, but also for his eccentric and comical personality.",
         achievements: ["Successfully defended the firm against a former client's lawsuit",
         "Helped negotiate the merger of two large companies",
         "Represented a major entertainment company in a high-stakes intellectual property case",
@@ -44,7 +40,7 @@ const personnel = [
         name: "Mike Ross",
         img: "mike-ross.jpg",
 
-        background: "Mike Ross is a talented legal closer who, despite never attending law school, landed a job at Pearson Specter Litt with the help of Harvey Spector. He is known for his quick thinking and excellent memory, as well as his strong moral compass.",
+        background: "Mike Ross is a talented legal closer who, despite never attending law school, landed a job at Pearson Specter Litt with the help of Harvey Spector. He is known for his **quick thinking** and **excellent memory**, as well as his strong moral compass.",
         practice: ["Corporate law", "Mergers and Acquisitions", "Securities law", "Intellectual property law", "Criminal defense"],
         achievements:
             ["Successfully closed a major corporate deal",
@@ -60,7 +56,7 @@ const personnel = [
 
         background:
 
-            "Rachel Zane is a paralegal and legal secretary who eventually attends and graduates from Columbia Law School. She is known for her intelligence and ambition, as well as her strong work ethic and loyalty to her colleagues."
+            "Rachel Zane is a paralegal and legal secretary who eventually attends and graduates from **Columbia Law School**. She is known for her **intelligence and ambition**, as well as her strong work ethic and loyalty to her colleagues."
         , 
         achievements: ["Successfully argued a motion in court",
             "Helped negotiate a complex contract for a client",
@@ -77,7 +73,7 @@ const personnel = [
         name: "Dana Scott",
         img: "dana-scott.webp",
 
-        background: "Dana Scott is a top litigator and partner at Zane Specter Litt. She holds a law degree from Harvard Law School and is known for her tough, confident demeanor and her ability to close cases.",
+        background: "Dana Scott is a **top litigator** and partner at Zane Specter Litt. She holds a law degree from **Harvard Law School** and is known for her tough, confident demeanor and her ability to close cases.",
         practice: ["Litigation", "Contract law", "Tort law", "Environmental law", "Intellectual property law"],
         achievements: ["Successfully argued a motion in court",
             "Won a high-stakes civil litigation case",
@@ -91,7 +87,7 @@ const personnel = [
         img: "daniel-hardman.webp",
         
         background:
-            "Daniel Hardman is a successful and cunning attorney who has a law degree from an unnamed university. He is a former partner at Pearson Specter Litt and is known for his ambition, strategic mind, and his willingness to do whatever it takes to win a case. Despite his questionable tactics, he is highly respected in the legal community.",
+            "Daniel Hardman is a successful and cunning attorney who has a law degree from an unnamed university. He is a former partner at Pearson Specter Litt and is known for his ambition, strategic mind, and his willingness to do whatever it takes to win a case. Despite his questionable tactics, he is **highly respected** in the legal community.",
         practice:
             ["Corporate law", "Mergers and Acquisitions", "Securities law", "Intellectual property law", "Labor law"],
         achievements:
@@ -112,7 +108,7 @@ const personnel = [
         name: "Robert Zane",
         img: "robert-zane.webp",
 
-        background: "Robert Zane is a highly respected and successful attorney, who holds a law degree from Columbia Law School. He is the founder of his own law firm, Zane Specter Litt, and is known for his cunning and strategic mind, as well as his strong sense of loyalty to his family.",
+        background: "Robert Zane is a highly respected and successful attorney, who holds a law degree from **Columbia Law School**. He is the founder of his own law firm, **Zane Specter Litt**, and is known for his cunning and strategic mind, as well as his strong sense of loyalty to his family.",
         practice: ["Corporate law", "Mergers and Acquisitions", "Securities law", "Intellectual property law"],
         achievements: ["Successfully negotiated a multi-billion dollar merger",
             "Won a high-stakes securities fraud case",
@@ -126,7 +122,7 @@ const personnel = [
         name: "Charles Mcgill",
         img: "charles-mcgill.webp",
 
-        background: "Charle has a law degree from Columbia Law School and is known for his intelligence, integrity, and attention to detail."
+        background: "Charle has a law degree from **Columbia Law School** and is known for his intelligence, integrity, and attention to detail."
         ,
         practice: ["Corporate Law", "Securities Law", "Intellectual Property Law", "Contract Law", "Environmental Law"],
 
@@ -143,7 +139,7 @@ const personnel = [
         img: "saul-goodman.jpg",
 
 
-        background: "Saul Goodman, real name Jimmy McGill, is a criminal lawyer and the principal character of Better Call Saul. He has a law degree from a correspondence school, but his education is often portrayed as less than adequate. Despite this, he is a cunning and resourceful attorney, known for his street smarts and his ability to find creative solutions for his clients.",
+        background: "Saul Goodman, real name Jimmy McGill, is a criminal lawyer and the principal character of Better Call Saul. He has a law degree from a correspondence school, but his education is often portrayed as less than adequate. Despite this, he is a cunning and resourceful attorney, **known for his street smarts and his ability to find creative solutions for his clients.**",
         practice: ["Criminal Law", "White - Collar Crime", "Personal Injury", "Consumer Law", "Elder Law"],
 
         achievements:
@@ -162,7 +158,7 @@ const personnel = [
         name: "Howard Hamlin",
         img: "howard-hamlin.jpg",
 
-        background: "Howard Hamlin is a successful and well - respected attorney and a managing partner at Hamlin, Hamlin & McGill(HHM).He has a law degree from Harvard Law School and is known for his intelligence, his strategic mind, and his ability to close deals.Despite his success, he is often portrayed as being somewhat of a ruthless opportunist.",
+        background: "Howard Hamlin is a successful and well - respected attorney and a managing partner at Hamlin, Hamlin & McGill(HHM).He has a law degree from **Harvard Law School** and is known for his intelligence, his strategic mind, and his ability to close deals.Despite his success, he is often portrayed as being somewhat of a ruthless opportunist.",
 
         practice: ["Corporate Law", "Mergers and Acquisitions", "Securities Law", "Intellectual Property Law", "Labor Law"],
 
@@ -180,7 +176,7 @@ const personnel = [
         name: "Kim Wexler",
         img: "kim-wexler.jpg",
 
-        background: "Kim Wexler is a talented and ambitious attorney who is a secretary at the law firm HHM before eventually becoming a successful solo practitioner.She has a law degree from an unnamed university and is known for her intelligence, her integrity, and her ability to find creative solutions for her clients.Despite her success, she is often portrayed as being somewhat of a underdog.",
+        background: "Kim Wexler is a **talented** and **ambitious** attorney who is a secretary at the law firm HHM before eventually becoming a successful solo practitioner.She has a law degree from an unnamed university and is known for her intelligence, her integrity, and her ability to find creative solutions for her clients.Despite her success, she is often portrayed as being somewhat of a underdog.",
 
         practice:
             ["Corporate Law", "Securities Law", "Intellectual Property Law", "Contract Law", "Environmental Law"],
@@ -192,27 +188,23 @@ const personnel = [
             ]
     },
     
-    {
-        id:12013,
-        name: "William Oakley",
-        img: "william-oakley.webp",
+    // {
+    //     id:12013,
+    //     name: "William Oakley",
+    //     img: "william-oakley.webp",
 
-        background: ' William "Bill" Oakley is a defense attorney based in Albuquerque, New Mexico. He has served as a deputy district attorney for 12 years before transitioning to private practice. This extensive experience in the criminal justice system has provided him with a deep understanding of the law and legal proceedings.',
+    //     background: ' William "Bill" Oakley is a defense attorney based in Albuquerque, New Mexico. He has served as a deputy district attorney for 12 years before transitioning to private practice. This extensive experience in the criminal justice system has provided him with a **deep understanding of the law and legal proceedings.**',
 
-        practice:
-            ["Criminal Defense", "DUI Defense", "Drug Crimes", "White Collar Crimes", "Appeals"],
+    //     practice:
+    //         ["Criminal Defense", "DUI Defense", "Drug Crimes", "White Collar Crimes", "Appeals"],
 
-        achievements:
-            ["Successfully defended clients against a range of criminal charges, including DUI, drug crimes, and white collar crimes",
-                "Obtained favorable outcomes for clients through plea bargains and motion practice",
-                "Won several appeals cases, overturning wrongful convictions and securing new trials",
-                "Developed a reputation as a skilled litigator and dedicated advocate for clients",
-                "Built a successful private practice with a large client base in Albuquerque and surrounding areas"]
+    //     achievements:
+    //         ["Successfully defended clients against a range of criminal charges, including DUI, drug crimes, and white collar crimes",
+    //             "Obtained favorable outcomes for clients through plea bargains and motion practice",
+    //             "Won several appeals cases, overturning wrongful convictions and securing new trials",
+    //             "Developed a reputation as a skilled litigator and dedicated advocate for clients",
+    //             "Built a successful private practice with a large client base in Albuquerque and surrounding areas"]
 
-
-
-
-
-    }
+    // }
 ]
 export default personnel

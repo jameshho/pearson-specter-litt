@@ -1,4 +1,3 @@
-import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import personnel from '../../data/personnel'
 
@@ -15,8 +14,9 @@ const Lawyers = () => {
         <div className='lawyers-container'>
           {personnel.map((i) => {
             return (
+
               <div className='lawyers-card' onClick={()=>navigate(`profile/${i.id}`)}>
-                <img src={`/headshots/${i.img}`} />
+                <img src={process.env.PUBLIC_URL + `/images/headshots/${i.img}`} alt={i.img}/>
                 <p className='name'>{i.name}</p>
                 
                 <p>Partner</p>

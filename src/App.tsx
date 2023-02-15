@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import './App.scss';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar/Navbar';
-import Contact from './pages/Contact';
+import Contact from './pages/Contact/Contact';
 import Lawyers from './pages/Lawyers';
 import Profile from './pages/Lawyers/collapsable/Profile';
 import NotFound from './pages/NotFound';
@@ -24,23 +24,25 @@ function App() {
       <ScrollToTop>
         <Navbar />
         <Routes>
-          <Route path='/' element={<TheFirm />} />
-
-          <Route path='/practicearea' element={<PracticeAreas />} />
-          <Route path='/practicearea/corporate' element={<Corporate />} />
-          <Route path='/practicearea/litigation' element={<Litigation />} />
-          <Route path='/practicearea/mergersacquisitions' element={<MergersAcquisitions />} />
-          <Route path='/practicearea/securitieslaw' element={<SecuritiesLaw />} />
-          <Route path='/practicearea/taxlaw' element={<TaxLaw />} />
+          {/* <Route path='/' element={<TheFirm />} /> */}
+          <Route path='/pearson-specter-litt' element={<TheFirm />} />
 
 
-          <Route path='/lawyers' element={<Lawyers />} />
-          <Route path='/lawyers/profile' element={<Profile />} />
-          <Route path='/lawyers/profile/:lawyerId' element={<Profile />} />
+          <Route path='/pearson-specter-litt/practicearea' element={<PracticeAreas />} />
+          <Route path='/pearson-specter-litt/practicearea/corporate' element={<Corporate />} />
+          <Route path='/pearson-specter-litt/practicearea/litigation' element={<Litigation />} />
+          <Route path='/pearson-specter-litt/practicearea/mergersacquisitions' element={<MergersAcquisitions />} />
+          <Route path='/pearson-specter-litt/practicearea/securitieslaw' element={<SecuritiesLaw />} />
+          <Route path='/pearson-specter-litt/practicearea/taxlaw' element={<TaxLaw />} />
 
 
-          <Route path='/contact' element={<Contact />} />
-          <Route path='*' element={<NotFound />} />
+          <Route path='/pearson-specter-litt/lawyers' element={<Lawyers />} />
+          <Route path='/pearson-specter-litt/lawyers/profile' element={<Profile />} />
+          <Route path='/pearson-specter-litt/lawyers/profile/:lawyerId' element={<Profile />} />
+
+
+          <Route path='/pearson-specter-litt/contact' element={<Contact />} />
+          <Route path='/pearson-specter-litt/*' element={<NotFound />} />
 
 
 

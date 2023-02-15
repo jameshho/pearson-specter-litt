@@ -1,7 +1,11 @@
 import React from 'react'
 import Logo from '../../components/Logo'
+import { useNavigate } from 'react-router-dom'
+
 
 const MergersAcquisitions = () => {
+  const navigate = useNavigate()
+
   return (
     <div className='profile-sub'>
       <div></div>
@@ -10,7 +14,7 @@ const MergersAcquisitions = () => {
 <Logo/>
         </div>
         <h1 className='profile-practice'>Practice Areas</h1>
-        <h2>Corporate Law</h2>
+        <h2>M & A</h2>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis hic ducimus, corrupti accusamus dolorem ad? Repellendus velit eius commodi minima facilis corporis cum eum culpa, dolorem delectus tempore ipsam fugiat!
         </p>
@@ -22,7 +26,7 @@ const MergersAcquisitions = () => {
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis hic ducimus, corrupti accusamus dolorem ad? Repellendus velit eius commodi minima facilis corporis cum eum culpa, dolorem delectus tempore ipsam fugiat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis hic ducimus, corrupti accusamus dolorem ad? Repellendus velit eius commodi minima facilis corporis cum eum culpa, dolorem delectus tempore ipsam fugiat!</p>
         <h3>Pearson Specter Litt</h3>
 
-        <button className='profile-button'>Contact Us</button>
+        <button className='profile-button' onClick={() => navigate('/pearson-specter-litt/contact')}>Contact Us</button>
         
 
       </div>

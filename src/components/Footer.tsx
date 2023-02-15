@@ -1,31 +1,30 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import { readConfigFile } from 'typescript'
 
 const Footer = () => {
     const navigate = useNavigate()
     return (
-        <div className='footer'>
+        <footer className='footer'>
 
             <div className='footer-container'>
                 <div>
                     <h3>Practice Areas</h3>
                     <ul>
-                    <li onClick={() => navigate('/practicearea/corporate')}> Corporate Law</li>
+                        <li onClick={() => navigate('/pearson-specter-litt/practicearea/corporate')}> Corporate Law</li>
 
-                        <li onClick={() => navigate('/practicearea/mergersacquisitions')}>M & A</li>
-                        <li onClick={() => navigate('/practicearea/securitieslaw')}>Securities Law</li>
-                        <li onClick={() => navigate('/practicearea/taxlaw')}>Tax Law</li>
-                        <li onClick={() => navigate('/practicearea/litigation')}>Litigation</li>
+                        <li onClick={() => navigate('/pearson-specter-litt/practicearea/mergersacquisitions')}>M & A</li>
+                        <li onClick={() => navigate('/pearson-specter-litt/practicearea/securitieslaw')}>Securities Law</li>
+                        <li onClick={() => navigate('/pearson-specter-litt/practicearea/taxlaw')}>Tax Law</li>
+                        <li onClick={() => navigate('/pearson-specter-litt/practicearea/litigation')}>Litigation</li>
 
                     </ul>
                 </div>
                 <div>
                     <h3>Lawyers</h3>
                     <ul>
-                        <li>Partners</li>
-                        <li>Consultants</li>
-                        <li>Associates</li>
+                        <li onClick={() => navigate('/pearson-specter-litt/lawyers')}>Partners</li>
+                        <li onClick={() => navigate('/pearson-specter-litt/lawyers')}>Consultants</li>
+                        <li onClick={() => navigate('/pearson-specter-litt/lawyers')}>Associates</li>
 
 
                     </ul>
@@ -47,7 +46,7 @@ const Footer = () => {
             <div className='footer-bottom'>
                 <p>Copyright Pearson Specter Litt 2023.All rights reserved.</p>
             </div>
-        </div >
+        </footer >
     )
 }
 

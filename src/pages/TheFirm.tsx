@@ -1,7 +1,3 @@
-import React from 'react'
-import Logo from '../components/Logo'
-
-
 const TheFirm = () => {
     return (
         <div className='firm'>
@@ -13,7 +9,8 @@ const TheFirm = () => {
                 
                     <h2>About us</h2>
                 </div>
-                <img className='thefirm-photo' src="/images/thefirm-photo.jpg" />
+          
+                <img className='thefirm-photo' src={process.env.PUBLIC_URL + "/images/thefirm-photo.jpg"} alt="members of the firms"/>
                 <p>Pearson Specter Litt is a preeminent law firm located in the heart of Manhattan, specializing in corporate law and serving some of the world's largest and most powerful companies. Founded by the legendary attorney Harvey Specter and his long-time colleague Louis Litt, the firm has a reputation for winning even the most complex and high-stakes cases. With a team of highly skilled and experienced lawyers, Pearson Specter Litt is dedicated to delivering outstanding legal representation and counsel to their clients.
 
                 </p>

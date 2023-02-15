@@ -1,5 +1,6 @@
 import React from 'react'
-import Logo from '../components/Logo'
+import Logo from '../../components/Logo'
+import MapComponent from './MapComponent'
 
 const Contact = () => {
     return (
@@ -11,7 +12,8 @@ const Contact = () => {
                 <div className='contact-header'>
                     <h2>Contact</h2>
                 </div>
-                <img src="images/google-map.png" className="contact-map" />
+                <MapComponent src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.149330581367!2d-73.9786736!3d40.7587402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258fecf664df5%3A0x33d224a0d5dacca2!2sRockefeller%20Center!5e0!3m2!1sen!2sus!4v1676478228991!5m2!1sen!2sus" width="700" height="350" />
+
                 <div className='contact-bottom'>
                     <div>
 
