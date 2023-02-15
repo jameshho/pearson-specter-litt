@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/pearson-specter-litt/static/css/main.4dead83e.css",
-    "main.js": "/pearson-specter-litt/static/js/main.4863bd6c.js",
+    "main.css": "/pearson-specter-litt/static/css/main.cfb1b89e.css",
+    "main.js": "/pearson-specter-litt/static/js/main.3b8ae6f7.js",
     "index.html": "/pearson-specter-litt/index.html",
-    "main.4dead83e.css.map": "/pearson-specter-litt/static/css/main.4dead83e.css.map",
-    "main.4863bd6c.js.map": "/pearson-specter-litt/static/js/main.4863bd6c.js.map"
+    "main.cfb1b89e.css.map": "/pearson-specter-litt/static/css/main.cfb1b89e.css.map",
+    "main.3b8ae6f7.js.map": "/pearson-specter-litt/static/js/main.3b8ae6f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.4dead83e.css",
-    "static/js/main.4863bd6c.js"
+    "static/css/main.cfb1b89e.css",
+    "static/js/main.3b8ae6f7.js"
   ]
 }
